@@ -64,3 +64,16 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model OperationalActivity {
+    id String @id @default(cuid())
+    code String @unique
+    activityStartDate DateTime
+    activityEndDate DateTime
+    activityType Activity @default(Emon)
+}
+
+enum Activity {
+  Emon // אימון
+  KavHir // קו חיר
+}

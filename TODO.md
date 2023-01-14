@@ -5,6 +5,7 @@
 - mission model => include "startMissionTime", "endMissionTime"
 - seed data of the database structure
 - home page
+- ADD email confirmation after generating activity code
 
 # scripts:
 

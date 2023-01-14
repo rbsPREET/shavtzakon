@@ -7,6 +7,14 @@
 - home page
 - ADD email confirmation after generating activity code
 
+* email service
+
+# auth
+
+- Auth0
+- Firebase (fullstack)
+- NextAuth
+
 # scripts:
 
 _docker_

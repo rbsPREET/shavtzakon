@@ -51,10 +51,16 @@ model User {
     id            String    @id @default(cuid())
     name          String?
     email         String?   @unique
-    emailVerified DateTime?
+    // emailVerified DateTime?
     image         String?
     accounts      Account[]
     sessions      Session[]
+    role UserRoles @default(Solider) 
+}
+
+enum UserRoles {
+  Admin // אדמין
+  Solider // חייל
 }
 
 model VerificationToken {
@@ -76,4 +82,9 @@ model OperationalActivity {
 enum Activity {
   Emon // אימון
   KavHir // קו חיר
+}
+
+model Shavtzak {
+    id String @id @default(cuid())
+    title String
 }
